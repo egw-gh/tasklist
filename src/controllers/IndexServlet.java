@@ -36,7 +36,7 @@ public class IndexServlet extends HttpServlet {
         EntityManager em = DBUtil.createEntityManager();
 
         List<Task> tasks = em.createNamedQuery("getAllTasks", Task.class)
-                                 .getResultList();
+                             .getResultList();
 
         em.close();
 
